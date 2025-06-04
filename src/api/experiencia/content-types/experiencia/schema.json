@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiencias",
+  "info": {
+    "singularName": "experiencia",
+    "pluralName": "experiencias",
+    "displayName": "Experiência"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Descricao": {
+      "type": "text"
+    },
+    "Tempo": {
+      "type": "string"
+    },
+    "Numero_de_pessoas": {
+      "type": "integer"
+    },
+    "Precisa_local": {
+      "type": "boolean"
+    },
+    "Local": {
+      "type": "string",
+      "unique": false
+    },
+    "Valor": {
+      "type": "decimal"
+    },
+    "Indicacao": {
+      "type": "string"
+    },
+    "Imagem": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
